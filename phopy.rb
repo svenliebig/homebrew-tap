@@ -5,21 +5,21 @@
 class Phopy < Formula
   desc "A photo copy tool that organizes RAW and JPEG files"
   homepage "https://github.com/svenliebig/phopy"
-  version "1.6.1"
+  version "1.7.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/svenliebig/phopy/releases/download/v1.6.1/phopy_1.6.1_darwin_amd64.tar.gz"
-      sha256 "c73238c7e0509c39daf91eb7d5bbd8813f003c8ef88b24a747df7cd0e944b3ba"
+      url "https://github.com/svenliebig/phopy/releases/download/v1.7.0/phopy_1.7.0_darwin_amd64.tar.gz"
+      sha256 "48960137cf38096b04af76dde994842fdd37cd17d05fa7396df71770d84c33f9"
 
       def install
         bin.install "phopy"
       end
     end
     on_arm do
-      url "https://github.com/svenliebig/phopy/releases/download/v1.6.1/phopy_1.6.1_darwin_arm64.tar.gz"
-      sha256 "8081fe79a6c16ca6c624842988b475701df7fdb8e8abf1560f64dd194409569b"
+      url "https://github.com/svenliebig/phopy/releases/download/v1.7.0/phopy_1.7.0_darwin_arm64.tar.gz"
+      sha256 "2001e098e1bfd47dd429380fc579debdc86e16d705931f66d13cb55c937cd251"
 
       def install
         bin.install "phopy"
@@ -30,8 +30,8 @@ class Phopy < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/svenliebig/phopy/releases/download/v1.6.1/phopy_1.6.1_linux_amd64.tar.gz"
-        sha256 "68821be2f29cedebfded7143ea90b619781616df0c0a3da325fa303939cfb362"
+        url "https://github.com/svenliebig/phopy/releases/download/v1.7.0/phopy_1.7.0_linux_amd64.tar.gz"
+        sha256 "bd71d3863d515686a4495a3458919aa65d09774fca8e43de5fa67d98b35982df"
 
         def install
           bin.install "phopy"
@@ -40,8 +40,8 @@ class Phopy < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/svenliebig/phopy/releases/download/v1.6.1/phopy_1.6.1_linux_armv6.tar.gz"
-        sha256 "1de649d14419355ef6cf1902247305f8e049247573a7b1f47c1d4e3fa3a87a8a"
+        url "https://github.com/svenliebig/phopy/releases/download/v1.7.0/phopy_1.7.0_linux_armv6.tar.gz"
+        sha256 "e98fb3ab4254da3fe2fbde9c087ea44ad5cfb42a3db8fcb8cc208700f5a04a14"
 
         def install
           bin.install "phopy"
@@ -50,8 +50,8 @@ class Phopy < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/svenliebig/phopy/releases/download/v1.6.1/phopy_1.6.1_linux_arm64.tar.gz"
-        sha256 "bfd61fe17fa0abe056f34761674f516112fbc75cba50413eda52414a5e9caa14"
+        url "https://github.com/svenliebig/phopy/releases/download/v1.7.0/phopy_1.7.0_linux_arm64.tar.gz"
+        sha256 "14b5f34e259c766a528b21b7296d0d136e445ac981f0a97b4b88a14cffdfc8e4"
 
         def install
           bin.install "phopy"
