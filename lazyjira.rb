@@ -5,21 +5,21 @@
 class Lazyjira < Formula
   desc "A minimal Jira CLI for the terminal inspired by lazygit"
   homepage "https://github.com/svenliebig/lazyjira"
-  version "1.3.0"
+  version "1.4.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/svenliebig/lazyjira/releases/download/v1.3.0/lazyjira_1.3.0_darwin_amd64.tar.gz"
-      sha256 "4557d8f717ae0e3977408d82efa8c9d00318950e24aa95625d5b8cc23735f903"
+      url "https://github.com/svenliebig/lazyjira/releases/download/v1.4.0/lazyjira_1.4.0_darwin_amd64.tar.gz"
+      sha256 "0ae23c192379eb12cbf2f66df5f417702d063865860a375ec035ef91f6916262"
 
       def install
         bin.install "lazyjira"
       end
     end
     on_arm do
-      url "https://github.com/svenliebig/lazyjira/releases/download/v1.3.0/lazyjira_1.3.0_darwin_arm64.tar.gz"
-      sha256 "6364059e2f34231d9e1b5e144475f02eb771fd73b0f4d665b58646df32c7e1b9"
+      url "https://github.com/svenliebig/lazyjira/releases/download/v1.4.0/lazyjira_1.4.0_darwin_arm64.tar.gz"
+      sha256 "71019652a274fdb2624351b47ac010534beb85565031f0dbc93288f537c6f768"
 
       def install
         bin.install "lazyjira"
@@ -30,8 +30,8 @@ class Lazyjira < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/svenliebig/lazyjira/releases/download/v1.3.0/lazyjira_1.3.0_linux_amd64.tar.gz"
-        sha256 "735c0a99dd43d2d116ba96bc675ca2a32471204bb2451edae089559b24c9565c"
+        url "https://github.com/svenliebig/lazyjira/releases/download/v1.4.0/lazyjira_1.4.0_linux_amd64.tar.gz"
+        sha256 "1434ca00307b1bbab7d5a697e9d7b75cc7065cf57abc3c081e28722a80de90ed"
 
         def install
           bin.install "lazyjira"
@@ -40,8 +40,8 @@ class Lazyjira < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/svenliebig/lazyjira/releases/download/v1.3.0/lazyjira_1.3.0_linux_armv6.tar.gz"
-        sha256 "ac1019b51f1c55e2c23ef7a5f05619efced5b2c3c1d7db9cd6f29189b113a0e9"
+        url "https://github.com/svenliebig/lazyjira/releases/download/v1.4.0/lazyjira_1.4.0_linux_armv6.tar.gz"
+        sha256 "0faa7409c1811ed832a20217b27f1f6f5cca0aa197aca362b5bcaa426e8ba013"
 
         def install
           bin.install "lazyjira"
@@ -50,8 +50,8 @@ class Lazyjira < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/svenliebig/lazyjira/releases/download/v1.3.0/lazyjira_1.3.0_linux_arm64.tar.gz"
-        sha256 "de8867713be1f8630b1c534f35e594c394c16e72d030b69517ecc436c0fe94f9"
+        url "https://github.com/svenliebig/lazyjira/releases/download/v1.4.0/lazyjira_1.4.0_linux_arm64.tar.gz"
+        sha256 "44b2429ea6a1095a8a7cffd9c9d56d22a5291a803ef432b168283c4d3149fa60"
 
         def install
           bin.install "lazyjira"
